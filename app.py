@@ -65,7 +65,7 @@ def main():
   # else:
   #       print("OPENAI_API_KEY is set")
   st.markdown("<h1 style='text-align: center; color: white;'>Ask your csv</h1>",unsafe_allow_html=True)
-  st.markdown("<h2> Get Your openai <a href='https://platform.openai.com/account/api-keys' target='_blank'> API key</a></h2>",unsafe_allow_html=True)
+  st.markdown("<h5> Get Your openai <a href='https://platform.openai.com/account/api-keys' target='_blank'> API key</a></h2>",unsafe_allow_html=True)
   openaikey=st.text_input("Enter your openai API key")
 
   # st.header("Ask Your CSV ")
