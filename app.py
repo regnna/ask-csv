@@ -63,9 +63,9 @@ def main():
   #       exit(1)
   # else:
   #       print("OPENAI_API_KEY is set")
-  st.markdown("<h1 style='text-align: center; color: white;'>Ask you'r csv</h1>",unsafe_allow_html=True)
+  st.markdown("<h1 style='text-align: center; color: white;'>Ask your csv</h1>",unsafe_allow_html=True)
 
-  openaikey=st.text_input("Enter your openai API key")
+  openaikey=st.text_input("Enter your <a href='https://platform.openai.com/account/api-keys'>openai API key</a>")
 
   # st.header("Ask Your CSV ")
   user_csv=st.file_uploader("Upload your CSV file",type="csv")
