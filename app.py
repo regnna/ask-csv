@@ -70,7 +70,7 @@ def main():
   # st.header("Ask Your CSV ")
   user_csv=st.file_uploader("Upload your CSV file",type="csv")
   # st.markdown(openaikey)
-  t=openaikey is ""
+  t=openaikey == ""
   # st.markdown(t)
   if user_csv is not None:
         with NamedTemporaryFile(mode='w+b', suffix=".csv") as f:
