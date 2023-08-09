@@ -21,7 +21,7 @@ def main():
 
   .stApp {
       margin: auto;
-      
+
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
       overflow: auto;
       background: linear-gradient(315deg, #4f2991 3%, #7dc4ff 38%, #36cfcc 68%, #a92ed3 98%);
@@ -66,7 +66,7 @@ def main():
   #       print("OPENAI_API_KEY is set")
   st.markdown("<h1 style='text-align: center; color: white;'>Ask your csv</h1>",unsafe_allow_html=True)
   st.markdown(" <a href='https://platform.openai.com/account/api-keys' target='_blank'>openai API key</a>",unsafe_allow_html=True)
-  openaikey=st.text_input("Enter your <a href='https://platform.openai.com/account/api-keys'>openai API key</a>",unsafe_allow_html=True)
+  openaikey=st.text_input("Enter your openai API key")
 
   # st.header("Ask Your CSV ")
   user_csv=st.file_uploader("Upload your CSV file",type="csv")
