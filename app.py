@@ -82,7 +82,8 @@ def main():
             agent = create_csv_agent(llm, f.name, verbose=True)
             if user_input:
                 response = agent.run(user_input)
-                st.write(response)
+                with st.spinner(text="In progress..."):
+                    st.write(response)
             f.flush()
             
   # if user_csv is not None:
